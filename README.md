@@ -3,6 +3,11 @@
  - **Name**: Book Recommender (semantic + emotion-aware)
  - **Description**: A semantic book recommender that combines document embeddings and emotion signals to surface emotionally relevant book recommendations. The project includes a Gradio dashboard (`dashboard.py`), data CSVs used for recommendations, and several Jupyter notebooks for exploration and modeling.
 
+<img width="1919" height="819" alt="Screenshot 2025-12-05 174452" src="https://github.com/user-attachments/assets/bd0f26ce-24aa-40a9-8c4c-36680a1289e8" />
+<img width="1919" height="822" alt="Screenshot 2025-12-05 174541" src="https://github.com/user-attachments/assets/010e0e28-9062-4c6a-b873-b269f0a9f196" />
+<img width="1919" height="826" alt="Screenshot 2025-12-05 174525" src="https://github.com/user-attachments/assets/10b37b26-02a0-4e6d-9238-2220a2a7b232" />
+
+
 **Key Files**
 - `dashboard.py`: Gradio app that runs a semantic recommender using HuggingFace sentence embeddings and a Chroma vector DB.
 - `books_with_emotions.csv`, `books_with_categories.csv`, `cleaned_books.csv`: Datasets used by the project.
@@ -44,10 +49,3 @@ The dashboard uses a HuggingFace sentence-transformer (`sentence-transformers/al
 **Troubleshooting**
 - If you get import errors for any `langchain_*` or community imports, verify package names on PyPI. The project imports community LangChain modules (e.g., `langchain_community`, `langchain_text_splitters`, `langchain_chroma`); if an import fails, try installing `langchain-community`, `langchain-text-splitters`, and `chromadb`.
 - If embedding downloads fail, ensure you have internet access or have the model cached with `sentence-transformers`.
-
-**Next Steps / Notes**
-- If you want a pinned environment, run `pip freeze > requirements.txt` from a working environment and commit the pinned file.
-- Consider creating a `Procfile` or Dockerfile for deployment.
-
-**Contact / Author**
-- This repo is in the working branch. Please open issues or contact the maintainer for clarifications.
